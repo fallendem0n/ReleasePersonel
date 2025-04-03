@@ -21,15 +21,6 @@ public:
 		cinsiyet = cins;
 	}
 
-<<<<<<< HEAD
-=======
-	int count = 0;
-
-	void setCount(int& count) {
-		count++;
-	}
-
->>>>>>> c87bec497b888f494774c7c7be3f73099f7c69dc
 	int getNumara() const {
 		return numara;
 	}
@@ -92,11 +83,7 @@ static bool numaraKontrol(int a) {
 }
 
 static void addPersonel(vector<Personel>& personel) {
-<<<<<<< HEAD
-	int no = 0;
-=======
-	int no=0;
->>>>>>> c87bec497b888f494774c7c7be3f73099f7c69dc
+	int no;
 	string isim, soyisim, departman;
 	char cinsiyet;
 
@@ -250,10 +237,7 @@ static void deleteFromDatabase(vector<Personel>& personel) {
 int main() {
 	vector<Personel> vPersonel;
 	int secim = 0;
-<<<<<<< HEAD
 	int count = 0;
-=======
->>>>>>> c87bec497b888f494774c7c7be3f73099f7c69dc
 
 	do {
 		cout << "\n ---- Personel Yonetim Sistemi ---- \n";
@@ -265,20 +249,14 @@ int main() {
 		cout << "6. Veritabanindaki Personelleri Listele \n";
 		cout << "7. Veritabaninda Personel Ara \n";
 		cout << "8. Veritabanindan Personel Sil \n";
-<<<<<<< HEAD
 		cout << count << " Adet yeni personel kaydi veritabanina gitmeyi bekliyor \n";
-=======
->>>>>>> c87bec497b888f494774c7c7be3f73099f7c69dc
 		cout << "Seciminizi Yapin: ";
 		cin >> secim;
 
 		switch (secim) {
 		case 1:
 			addPersonel(vPersonel);
-<<<<<<< HEAD
 			count++;
-=======
->>>>>>> c87bec497b888f494774c7c7be3f73099f7c69dc
 			break;
 		case 2:
 			listPersonel(vPersonel);
@@ -291,10 +269,7 @@ int main() {
 			break;
 		case 5:
 			sendDatabase(vPersonel);
-<<<<<<< HEAD
 			count = 0;
-=======
->>>>>>> c87bec497b888f494774c7c7be3f73099f7c69dc
 			break;
 		case 6:
 			listFromDatabase(vPersonel);
